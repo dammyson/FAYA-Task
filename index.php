@@ -73,6 +73,14 @@ if(isset($_POST["url"]))
               <div class="col-sm-4">
                                    <h3>Summary</h3>
                                  <hr class="linedot">
+                  <?php $arr = array("html", "div", "title", "h1", "h2", "h3", "h4", "h5", "li", "ul", "img", "p", "head", "header", "footer", "script", "meta", "link");
+                                foreach ($arr as &$value) {   ?>
+
+                                           <li><a onclick="sendAjaxRequest('<?php echo $value; ?>','<?php echo $url; ?>');"><code>&lt;<?php echo $value; ?>&gt;</code></a>  <?php echo substr_count($strMain,  "&lt;". $value) + substr_count($strMain,  $value. "&gt;"); ?></li>
+
+
+                                <?php  }?>
+
 
                  
               </div>

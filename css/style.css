@@ -1,0 +1,207 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+}
+
+
+
+
+/****Nvigation***/
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-default {
+    background-color: #12465b;
+    border-color: transparent;
+    border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+/***button*****/
+.btn-success {
+    color: #fff;
+    background-color: #25c1af;
+    border-color: #25c1af;
+}
+.btn {
+	color:white;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 2px solid #fff;
+    border-radius: 0px;
+}
+.btn:hover {
+   border: 2px solid #fff;
+   color:white;
+}
+.btn-default {
+	background-color: transparent;
+}
+/****Jumbotron***/
+.jumbotron {
+	padding: 250px 0;
+	background-image: url(../images/image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*****Custom Classes****/
+.tare, .thow, .tpack, .tfaq, .support {
+	padding: 100px 0;
+}
+.how {
+	background-color: #25c1af;
+}
+.tpad {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 50px;
+	text-align: center;
+	color:white;
+}
+.tpad p {
+	font-size: 14px;
+}
+/***Label****/
+
+/****Testimonial*****/
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+.testify {
+	background-color: #222;
+	color:white;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+/****Panel*****/
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #25c1af;
+    border-color: #ddd;
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #25c1af;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.support {
+	background-color: #25c1af;
+}
+/****Top*****/
+#toTop {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 48px;
+}
+#toTop {
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    opacity: 0.5;
+    display:none;
+    cursor: pointer;
+}
+#toTop:hover {
+    opacity: 1;
+}
+/****Media Queries *****/
+@media screen and (max-width: 769px) {
+	.jumbotron {
+		height: 500px;
+		padding-top: 50px;
+	}
+	#toTop {
+		width: 50px;
+		height: 50px;
+	}
+	.tare, .thow, .tpack, .tfaq, .support {
+	padding: 0px 10px;
+   }
+   label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    float: left;
+   }
+}

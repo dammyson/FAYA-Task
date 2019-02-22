@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+<?php 
+
+
+$strMain ="";
+  $url = "nul";
+if(isset($_POST["url"]))
+{
+    $url = $_POST["url"];
+    if(!empty($_POST["url"])){
+    $data = file_get_contents($url);
+    $strMain = htmlentities($data);
+    }
+}
+
+?><!DOCTYPE html>
 
 
 <html dir="ltr" lang="en-US">
@@ -46,8 +60,12 @@
                 
                  <hr class="linedot">
                      
+                     
                      <div id="div1">
-                       
+                         <?php 
+                            echo $strMain;
+
+                         ?>
                   
                   </div>
                   
